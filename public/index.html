@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Best tools for Solana ecosystem"
+    />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+
+    <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      /* display: flex; */
+      align-items: center;
+      /* padding-top: 40px; */
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+    }
+
+    .form-signin {
+      width: 100%;
+      max-width: 330px;
+      padding: 15px;
+      margin: auto;
+    }
+
+    .form-signin .checkbox {
+      font-weight: 400;
+    }
+
+    .form-signin .form-floating:focus-within {
+      z-index: 2;
+    }
+
+    .form-signin input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .smaller_alert {
+      padding: 0.6rem 0.6rem;
+    }
+
+    .bg-purple {
+      background-color: #6f42c1;
+    }
+
+    .dot-flashing {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #9880ff;
+      color: #9880ff;
+      animation: dotFlashing 1s infinite linear alternate;
+      animation-delay: .5s;
+    }
+
+    .dot-flashing::before, .dot-flashing::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot-flashing::before {
+      left: -15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #9880ff;
+      color: #9880ff;
+      animation: dotFlashing 1s infinite alternate;
+      animation-delay: 0s;
+    }
+
+    .dot-flashing::after {
+      left: 15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #9880ff;
+      color: #9880ff;
+      animation: dotFlashing 1s infinite alternate;
+      animation-delay: 1s;
+    }
+
+
+
+
+
+    .btn-outline-social {
+      color: #242627;
+
+      border-color: #d1aedb;
+    }
+    .btn-outline-social:hover {
+      color: #a25bb8;
+      /* text-decoration: underline; */
+      background-color: #f8f8f8;
+    }
+    .btn-check:focus + .btn-outline-social, .btn-outline-social:focus {
+      box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5);
+    }
+    .btn-check:checked + .btn-outline-social, .btn-check:active + .btn-outline-social, .btn-outline-social:active, .btn-outline-social.active, .btn-outline-social.dropdown-toggle.show {
+      color: #a25bb8;
+      /* text-decoration: underline; */
+
+      background-color: #e9e8e8;
+      border-color: #6c757d;
+    }
+
+    .btn-outline-social:disabled, .btn-outline-social.disabled {
+      color: #6c757d;
+      background-color: transparent;
+    }
+
+    .btn:focus,.btn:active {
+      outline: none !important;
+      box-shadow: none;
+    }
+
+    .lh-35 {
+      line-height: 35px;
+    }
+
+    .maintenance {
+      height: 270px;
+      width: 650px;
+
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -165px;
+    }
+
+    .twitter-align {
+      line-height: 5px;
+      position: relative;
+    top: 3px;
+    }
+
+    .info-btn-rank {
+      position: relative;
+      top: -5px;
+      margin-left: 5px;
+    }
+
+    .form-signin {
+      width: 100%;
+      max-width: 430px;
+      padding: 15px;
+      margin: auto;
+  }
+
+    .sol_price {
+      display: inline-block;
+      position: relative;
+      top: -5px;
+      padding-right: 15px;
+    }
+
+    .active_dot {
+      background-color: rgb(95, 184, 7);
+      width: 7px;
+      display: inline-block;
+      height: 7px;
+      margin-bottom: 1px;
+      margin-right: 3px;
+    }
+
+    .collection_btn_align {
+      margin-left: auto;
+    }
+
+
+  </style>
+
+    <link href="https://getbootstrap.com/docs/5.1/examples/list-groups/list-groups.css" rel="stylesheet">
+
+    
+
+
+    <title>Sol Tracker</title>
+  </head>
+  <body>
+   
+  
+  <div id="root" />
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(85907749, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/85907749" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+    
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </body>
+</html>
