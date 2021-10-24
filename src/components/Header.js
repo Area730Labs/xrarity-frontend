@@ -28,7 +28,7 @@ class Header extends React.Component {
     }
 
     checkPrice(){
-        axios.get('https://api.binance.com/api/v3/avgPrice?symbol=SOLUSDT').then(results => {
+        axios.get('https://api.binance.com/api/v3/avgPrice?symbol=ETHUSDT').then(results => {
             this.setState({
                 solPrice: Number(results.data.price).toFixed(1),
             });
@@ -63,7 +63,7 @@ class Header extends React.Component {
             </ul>
     
             <div className="col-md-3 text-end">
-                <div className="sol_price"><strong><span className="active_dot rounded-circle"></span>SOL ${this.state.solPrice}</strong></div>
+                <div className="sol_price"><strong><span className="active_dot rounded-circle"></span>ETH ${this.state.solPrice}</strong></div>
                 <span className="twitter-align"><a href="https://twitter.com/sol_tracker?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @sol_tracker</a>
                 </span>
             {/* <button type="button" className="btn btn-outline-primary me-2">Login</button>
