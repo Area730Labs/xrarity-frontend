@@ -64,7 +64,7 @@ class Header extends React.Component {
     
             <div className="col-md-3 text-end">
                 <div className="sol_price"><strong><span className="active_dot rounded-circle"></span>ETH ${this.state.solPrice}</strong></div>
-                <span className="twitter-align"><a href="https://twitter.com/sol_tracker?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @sol_tracker</a>
+                <span className="twitter-align"><a href="https://twitter.com/xraritynft?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @sol_tracker</a>
                 </span>
             {/* <button type="button" className="btn btn-outline-primary me-2">Login</button>
                 <button type="button" className="btn btn-primary">Sign-up</button> */}
