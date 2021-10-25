@@ -62,6 +62,10 @@ class App extends React.Component {
               <RarityCollections key="general_rarity" collections={this.state.collections}/>
             </Route>
 
+            <Route path="/rarity/">
+              <RarityCollections key="general_rarity_2" collections={this.state.collections}/>
+            </Route>
+
             <Route path="/about">
               <About />
             </Route>

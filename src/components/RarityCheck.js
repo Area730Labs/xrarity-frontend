@@ -151,6 +151,7 @@ class RarityCheck extends React.Component {
     
 
     render() {
+
         const collectionName = this.props.collection_name;
 
         let isError = this.state.isError;

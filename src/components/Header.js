@@ -35,7 +35,7 @@ class Header extends React.Component {
         });
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         this.checkPrice();
         this.interval = setInterval(this.checkPrice, 15000);
     }
