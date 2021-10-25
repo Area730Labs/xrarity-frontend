@@ -66,7 +66,7 @@ class RarityCollections extends React.Component {
 
         <Switch>
 
-            <Route exact path="/rarity/">
+            <Route exact path="/">
                 <div className="list-group list-group-checkable p-2 mt-4">
 
                     <div className="mb-2 card card-body p-2 d-flex">

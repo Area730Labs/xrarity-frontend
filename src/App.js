@@ -40,7 +40,7 @@ class App extends React.Component {
   }
 
   initReactGA() {
-    ReactGA.initialize('UA-210252634-1');
+    ReactGA.initialize('G-3BKXD6BKVL');
   };
 
   render(){
@@ -57,18 +57,10 @@ class App extends React.Component {
 
         <Header />
         
-
           <Switch>
-            <Redirect exact from="/" to="/rarity" />
-
-            <Route path="/rarity/">
+            <Route exact path="/">
               <RarityCollections key="general_rarity" collections={this.state.collections}/>
             </Route>
-
-            <Route path="/c/">
-              <RarityCollections key="shortlink_rarity" collections={this.state.collections}/>
-            </Route>
-
 
             <Route path="/about">
               <About />

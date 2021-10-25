@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: `https://api.soltracker.io/`
+  baseURL: `https://api.xrarity.io/`
   //baseURL: ``,
-  // baseURL: `https://soltracker-api-test.herokuapp.com/`,
+  // baseURL: `https://xrarity-staging.herokuapp.com`,
 });
 
